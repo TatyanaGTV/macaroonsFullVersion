@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Tavolga Free';
+	src: url('../fonts/tavolga_free.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/tavolga_free.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/tavolga_free.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/tavolga_free.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/tavolga_free.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/tavolga_free.svg#tavolga_free') format('svg'); /* Chrome < 4, Legacy iOS */
+}

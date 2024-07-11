@@ -1,0 +1,604 @@
+.main-cont() {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media screen and (max-width: 1229px) {
+
+    .container{
+        .main-cont();
+    }
+
+    .attract-image img {
+        max-width: 100%;
+    }
+
+    .advantage-image {
+        max-width: 100%;
+    }
+
+    .about {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 151px;
+        margin-bottom: 88px;
+    }
+
+    .macaroons {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        .main-cont();
+    }
+
+    .advantage-image {
+        margin-top: 180px;
+    }
+
+    .macaroons {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    .footer {
+        .container {
+            column-gap: 4px;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header {
+        .contacts {
+            display: none;
+        }
+        .container {
+            justify-content: unset;
+            gap: 100px;
+        }
+    }
+
+    .attract {
+        .container {
+            flex-direction: column;
+            .attract-image {
+                align-self: flex-end;
+                margin-top: 0;
+                margin-bottom: 62px;
+                margin-right: 74px;
+            }
+            .attract-info {
+                margin-top: 102px;
+            }
+        }
+    }
+
+    .attract-button {
+        margin-bottom: 0;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-bottom: 88px;
+        justify-items: center;
+        .advantage-image {
+            max-width: 100%;
+            margin-top: 0;
+            display: grid;
+            justify-items: center;
+        }
+    }
+
+
+
+    .advantage-info{
+        display: grid;
+        justify-items: center;
+        h2 {
+            text-align: center;
+        }
+        p {
+            max-width: unset;
+            text-align: center;
+
+        }
+    }
+
+
+
+
+    .advantages-four {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 260px 260px;
+        gap: 54px;
+        padding-bottom: 120px;
+        justify-content: center;
+    }
+
+    .advantage-title {
+        text-align: center;
+    }
+
+    .advantage-desc {
+        text-align: center;
+    }
+
+    .circle {
+        margin: 0 auto;
+    }
+
+    .macaroons {
+        padding-bottom: 122px;
+        padding-top: 81px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns:259px 259px;
+        grid-gap: 30px;
+        justify-content: center;
+    }
+
+    .order-tools {
+        padding-top: 120px;
+        .order-form {
+            order: 1;
+        }
+        .order-image {
+            order: 2;
+            margin-top: 320px;
+            position: relative;
+        }
+    }
+
+    .strawberry-1 {
+        top: 439px;
+        left: 308px;
+    }
+
+    .strawberry-2 {
+        top: 82px;
+        left: 591px
+    }
+
+    .ring {
+        top: 746px;
+        right: 228px
+    }
+    .present-image {
+        bottom: 12px;
+        right: 40px;
+    }
+    .present-circle {
+        bottom: 7px;
+        right: 30px;
+        width: 72px;
+        height: 70px;
+    }
+
+
+}
+
+@media screen and (max-width: 705px) {
+    .order-image img {
+        width: 100%;
+    }
+    .strawberry-2 {
+        top: 253px;
+        left: 575px;
+    }
+    .strawberry-1 {
+        top: 570px;
+        left: 308px;
+    }
+   .footer {
+        .container {
+            grid-template-columns: 164px 167px 188px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .advantage-image {
+    max-width: 100%;
+        margin-top: 0;
+    }
+
+    .order-image {
+        max-width: 320px;
+    }
+    .strawberry-2 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 570px) {
+
+    .header .container {
+        justify-content: unset;
+        gap: 43px;
+    }
+    .attract-info {
+        margin-top: 54px;
+        h1 {
+            font-size: 55px;
+            text-align: center;
+            width: 330px;
+        }
+        p {
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+    .attract .container {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .button.attract-button {
+        margin: 0 53px 32px 53px;
+    }
+
+    .attract-image {
+        align-self: center;
+        margin-top: 0;
+        margin-bottom: 62px;
+        img {
+            max-width: 100%;
+            height: 207px;
+        }
+    }
+    .attract-image::before, .attract-image::after {
+        content: '';
+        width: 109px;
+        height: 109px;
+    }
+
+    .advantages-four {
+        gap: 20px;
+        grid-template-columns: 224px 223px;
+    }
+    .macaroons {
+        grid-template-columns: 1fr;
+    }
+
+    .order-tools {
+        text-align: center;
+    }
+
+    .order-image {
+        display: none;
+    }
+
+    .order-form h2 {
+        font-size: 30px;
+        font-family: Tavolga Free;
+        color: rgb(51, 25, 7);
+        line-height: 1.167;
+        p {
+            font-size: 16px;
+            font-family: Gilroy-regular, sans-serif;
+            color: rgb(51, 25, 7);
+            margin-bottom: 60px;
+        }
+    }
+
+    .button.order-button {
+        margin-bottom: 77px;
+    }
+
+    .strawberry-1 {
+        top: 231px;
+        left: 24px;
+    }
+
+    .strawberry-2 {
+        top: 275px;
+        left: 324px;
+    }
+
+    .footer {
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            .rights {
+                align-self: center;
+                order:4;
+            }
+            .contacts {
+                order:2;
+            }
+            .logo {
+                order:1;
+            }
+            .instagram {
+                order:3;
+            }
+        }
+
+    }
+}
+@media screen and (max-width: 439px) {
+    .advantage-image img {
+        width: 100%;
+    }
+    .advantages-four {
+        grid-template-rows: 1fr;
+        padding-bottom: 120px;
+        justify-content: center;
+        gap: 20px;
+        grid-template-columns: 224px;
+    }
+    .header .container {
+        justify-content: unset;
+        gap: 95px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header .container {
+        justify-content: unset;
+        gap: 25px;
+        flex-direction: column;
+    }
+    .menu {
+        margin: 0 50px 0 83px;
+    }
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 375px) {
+
+    .header {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+    }
+    .container {
+        max-width: 345px;
+        margin: 0 auto;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        order: 2;
+        svg {
+            width: 36px;
+            height: 36px;
+            fill: #821328;
+            margin-right: 20px;
+        }
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0 auto;
+        li {
+            padding-bottom: 15px;
+        }
+    }
+
+    .menu.open {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.7);
+        z-index: 10;
+    }
+
+    .menu .close {
+        display: block;
+        width: 24px;
+        height: 24px;
+        fill: #821328;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .attract-info {
+        margin-top: 154px;
+        h1 {
+            font-size: 32px;
+            text-align: center;
+            width: 330px;
+        }
+        p {
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+
+    .button.attract-button {
+        margin: 0 53px 32px 53px;
+    }
+    .attract-image {
+        align-self: center;
+        margin-top: 0;
+        margin-bottom: 62px;
+        margin-right: unset;
+        img {
+            max-width: 100%;
+            height: 207px;
+        }
+    }
+
+    .ring {
+        width: 100px;
+        height: 100px;
+        top: 612px;
+        right: 150px
+    }
+
+    .about {
+        display: grid;
+        grid-template-rows: 1fr 183px;
+        grid-template-columns: 345px;
+        gap: 59px;
+        margin-bottom: 88px;
+    }
+
+    .advantage-image img {
+        max-width: 100%;
+    }
+
+    .advantage-info {
+        width: 100%;
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    .advantages-four {
+        grid-template-rows: 1fr;
+        grid-template-columns: 165px;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .advantage-title {
+        font-size: 18px;
+    }
+
+    .advantage-desc {
+        font-size: 13px;
+    }
+
+    .goods h2 {
+        font-size: 27px;
+    }
+
+    .macaroons {
+        padding-bottom: 122px;
+        padding-top: 65px;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns:259px;
+        grid-gap: 80px;
+        justify-content: center;
+    }
+
+    .order-image {
+        display: none;
+    }
+    .order-tools {
+    padding-top: unset;
+    }
+
+    .order-form {
+        h2 {
+            font-size: 30px;
+            font-family: Tavolga Free;
+            color: rgb(51, 25, 7);
+            line-height: 1.167;
+            text-align: left;
+        }
+        p {
+            font-size: 16px;
+            font-family: Gilroy-regular, sans-serif;
+            color: rgb(51, 25, 7);
+            margin-bottom: 60px;
+            text-align: left;
+        }
+    }
+
+    .order-act h3 {
+        text-align: left;
+    }
+    .button.order-button {
+        margin-bottom: 77px;
+    }
+
+    .strawberry-1 {
+        top: 260px;
+        left: 220px;
+    }
+
+    .strawberry-2 {
+        display: none;
+    }
+
+    .footer {
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            .logo-right {
+                display: unset;
+            }
+            .logo {
+                display: flex;
+                order: 1;
+            }
+            .contacts {
+                display: flex;
+                order: 2;
+            }
+            .instagram {
+                display: flex;
+                order: 3;
+            }
+            .rights {
+                display: flex;
+                order: 4;
+            }
+
+        }
+
+    }
+
+    .present-circle {
+        bottom: 8px;
+        right: 8px;
+    }
+    .present-image {
+        bottom: 13px;
+        right: 19px;
+    }
+
+}
